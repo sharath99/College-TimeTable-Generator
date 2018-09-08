@@ -1,0 +1,56 @@
+<html>
+    <head>
+        <style>
+            body{
+                background: url('back1.jpeg') no-repeat;
+                background-size: cover;
+                font-family: Arial;
+                padding: 10px;
+            }
+            .button {
+    background-color:gainsboro;
+    border: none;
+    color: black;
+    padding: 10px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 2px 2px;
+    cursor: pointer;
+}
+.button:hover{
+    background-color: #008CBA;
+}
+        </style>
+    </head>
+    <body>
+    <center>
+        <form action="login.php" method="POST">
+            <table>
+                <tr>
+                    <td colspan="2" align="center">
+                        ADMIN LOGIN
+                    </td>
+                </tr>
+                <tr><td colspan="2" align="center"><img src="user.png" width="150" height="150" border="1"></td></tr>
+                <tr>
+                    <td>username:</td>
+                    <td><input type="text" id="name" name="name"></td>
+                </tr>
+                <tr>
+                    <td>password:</td>
+                    <td><input type="password" id="pss" name="pss"></td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="center">
+                        <button class="button" type="submit">LOGIN</button>
+                    </td>
+                </tr>
+            </table>
+        </form>
+        <a href="staff.html"><button class="button" type="button">staff timetables</button></a>
+        <a href="student.html"><button class="button" type="button">student timetables</button></a>
+    </center>
+    </body>
+    </html>
